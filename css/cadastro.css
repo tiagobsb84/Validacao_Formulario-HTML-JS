@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap");
-
 * {
   padding: 0;
   margin: 0;
@@ -30,7 +28,7 @@ main {
 }
 
 .titulo-cadastro {
-  font-family: "Kalam", cursive;
+  font-family: var(--font-family-titulo);
   font-size: 4rem;
   font-weight: bold;
 }
@@ -60,6 +58,7 @@ section {
   font-size: 2rem;
   margin-top: 0.1rem;
   margin-bottom: 1.2rem;
+  font-family: var(--font-family-subTitulo);
 }
 
 .formulario {
@@ -74,6 +73,7 @@ fieldset {
 .sub-titulo-formulario {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  font-family: var(--font-family-subTitulo);
 }
 
 .input-container {
@@ -112,4 +112,10 @@ button {
   font-weight: bold;
   border-radius: 8px;
   cursor: pointer;
+
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: blue;
 }

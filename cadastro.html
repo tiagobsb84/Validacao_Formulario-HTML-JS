@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pet Shop</title>
-    <link rel="stylesheet" href="/css/global.css" />
     <link rel="stylesheet" href="/css/cadastro.css" />
+    <link rel="stylesheet" href="/css/global.css" />
   </head>
   <body>
     <main>
@@ -18,7 +18,7 @@
       </header>
       <section>
         <h3 class="titulo-formulario">Complete seu cadastro</h3>
-        <form class="formulario" action="">
+        <form class="formulario" action="/cadastro_concluido.html">
           <fieldset>
             <legend class="sub-titulo-formulario">Informações básicas</legend>
 
@@ -30,6 +30,7 @@
                 id="nome"
                 class="input"
                 placeholder="Nome"
+                required
               />
             </div>
 
@@ -41,6 +42,7 @@
                 id="email"
                 class="input"
                 placeholder="Email"
+                required
               />
             </div>
 
@@ -52,6 +54,9 @@
                 id="password"
                 class="input"
                 placeholder="Senha"
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"
+                title="A senha deve conter ente 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos."
+                required
               />
             </div>
           </fieldset>
